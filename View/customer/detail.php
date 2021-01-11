@@ -1,4 +1,4 @@
-<div class="col-md-9 col-9" style="background-color: #fff; padding-left: 30px;border-radius: 0.25rem; margin: 50px 0 0px 0;float: left;height: 100%">
+<div class="col-md-9 col-12" style="background-color: #fff; padding-left: 30px;border-radius: 0.25rem; margin: 50px 0 0px 0;float: left;height: 100%">
 	<div class="title-info" style="border-bottom: 1px solid #efefef; width: 100%; height:80px;margin-top: 20px;">
 		<div style="width: 90%; float: left;">
 		<h4 style="color: #333">Chi Tiết Hóa Đơn</h4>

@@ -54,7 +54,7 @@ $(document).on('keyup', '#pass_now', function(){
     var lowercase = pass_new.match(pattern1);
     if (pass.length > 5) {
         $('#error').attr("style","display: none");
-        $('#pass_now').attr("style","border-color: #ced4da; width: 300px");
+        $('#pass_now').attr("style","border-color: #ced4da;");
         $('#update').removeClass('btn-disable');
         if (5 < pass_new.length < 15 && uppercase && lowercase) {
             if (pass_new === confirm_pass) {
@@ -67,7 +67,7 @@ $(document).on('keyup', '#pass_now', function(){
         }
     }else{
         $('#error').attr("style","display: block");
-        $('#pass_now').attr("style","border-color: red; width: 300px");    
+        $('#pass_now').attr("style","border-color: red;");    
         $('#error').html('Mật khẩu phải gồm ít nhất 6 kí tự');
         $('#error').addClass('error');
         $('#update').addClass('btn-disable'); 
@@ -84,7 +84,7 @@ $(document).on('keydown', '#pass_now', function(){
     var lowercase = pass_new.match(pattern1);
     if (pass.length > 5) {
         $('#error').attr("style","display: none");
-        $('#pass_now').attr("style","border-color: #ced4da; width: 300px");
+        $('#pass_now').attr("style","border-color: #ced4da;");
         $('#update').removeClass('btn-disable');
         if (5 < pass_new.length < 15 && uppercase && lowercase) {
             if (pass_new === confirm_pass) {
@@ -97,7 +97,7 @@ $(document).on('keydown', '#pass_now', function(){
         }
     }else{
         $('#error').attr("style","display: block");
-        $('#pass_now').attr("style","border-color: red; width: 300px");    
+        $('#pass_now').attr("style","border-color: red;");    
         $('#error').html('Mật khẩu phải gồm ít nhất 6 kí tự');
         $('#error').addClass('error');
         $('#update').addClass('btn-disable'); 
@@ -113,20 +113,20 @@ $(document).on('keyup', '#pass_new', function(){
     var lowercase = pass_new.match(pattern1);
     if ( 5 < pass_new.length < 15 && uppercase && lowercase) {
         $('#error1').attr("style","display: none");
-        $('#pass_new').attr("style","border-color: #ced4da; width: 300px");
+        $('#pass_new').attr("style","border-color: #ced4da;");
         $('#update').removeClass('btn-disable');
         if (pass_new === confirm_pass) {
             $('#update').removeClass('btn-disable');
         }else{
             $('#update').addClass('btn-disable');
-            $('#error2').attr("style","display: block; width: 300px;");
-            $('#confirm_pass').attr("style","border-color: red; width: 300px");
+            $('#error2').attr("style","display: block;");
+            $('#confirm_pass').attr("style","border-color: red;");
             $('#error2').html('Mật khẩu xác nhận không trùng khớp!');
             $('#error2').addClass('error');
         }
     }else{
-        $('#error1').attr("style","display: block; width: 300px;");
-        $('#pass_new').attr("style","border-color: red; width: 300px");
+        $('#error1').attr("style","display: block;");
+        $('#pass_new').attr("style","border-color: red;");
         $('#error1').html('Mật khẩu phải có 6-16 kí tự, bảo gồm 1 chữ in hoa và 1 chữ in thường');
         $('#error1').addClass('error');
         $('#update').addClass('btn-disable');
@@ -142,20 +142,20 @@ $(document).on('keydown', '#pass_new', function(){
     var lowercase = pass_new.match(pattern1);
     if ( 5 < pass_new.length < 15 && uppercase && lowercase) {
         $('#error1').attr("style","display: none");
-        $('#pass_new').attr("style","border-color: #ced4da; width: 300px");
+        $('#pass_new').attr("style","border-color: #ced4da;");
         $('#update').removeClass('btn-disable');
         if (pass_new === confirm_pass) {
             $('#update').removeClass('btn-disable');
         }else{
             $('#update').addClass('btn-disable');
-            $('#error2').attr("style","display: block; width: 300px;");
-            $('#confirm_pass').attr("style","border-color: red; width: 300px");
+            $('#error2').attr("style","display: block;");
+            $('#confirm_pass').attr("style","border-color: red;");
             $('#error2').html('Mật khẩu xác nhận không trùng khớp!');
             $('#error2').addClass('error');
         }
     }else{
-        $('#error1').attr("style","display: block; width: 300px;");
-        $('#pass_new').attr("style","border-color: red; width: 300px");
+        $('#error1').attr("style","display: block;");
+        $('#pass_new').attr("style","border-color: red;");
         $('#error1').html('Mật khẩu phải có 6-16 kí tự, bảo gồm 1 chữ in hoa và 1 chữ in thường');
         $('#error1').addClass('error');
         $('#update').addClass('btn-disable');
@@ -172,7 +172,7 @@ $(document).on('keyup', '#confirm_pass', function(){
     var lowercase = pass_new.match(pattern1);
     if (pass_new === confirm_pass) {
         $('#error2').attr("style","display: none");
-        $('#confirm_pass').attr("style","border-color: #ced4da; width: 300px");
+        $('#confirm_pass').attr("style","border-color: #ced4da;");
         if (5 < pass_new.length < 15 && uppercase && lowercase) {
             if (pass.length > 5) {
                 $('#update').removeClass('btn-disable');
@@ -184,8 +184,8 @@ $(document).on('keyup', '#confirm_pass', function(){
         } 
     }else{
         $('#update').addClass('btn-disable');
-        $('#error2').attr("style","display: block; width: 300px;");
-        $('#confirm_pass').attr("style","border-color: red; width: 300px");
+        $('#error2').attr("style","display: block;");
+        $('#confirm_pass').attr("style","border-color: red;");
         $('#error2').html('Mật khẩu xác nhận không trùng khớp!');
         $('#error2').addClass('error');
     }
@@ -201,7 +201,7 @@ $(document).on('keydown', '#confirm_pass', function(){
     var lowercase = pass_new.match(pattern1);
     if (pass_new === confirm_pass) {
         $('#error2').attr("style","display: none");
-        $('#confirm_pass').attr("style","border-color: #ced4da; width: 300px");
+        $('#confirm_pass').attr("style","border-color: #ced4da;");
         if (5 < pass_new.length < 15 && uppercase && lowercase) {
             if (pass.length > 5) {
                 $('#update').removeClass('btn-disable');
@@ -213,8 +213,8 @@ $(document).on('keydown', '#confirm_pass', function(){
         } 
     }else{
         $('#update').addClass('btn-disable');
-        $('#error2').attr("style","display: block; width: 300px;");
-        $('#confirm_pass').attr("style","border-color: red; width: 300px");
+        $('#error2').attr("style","display: block;");
+        $('#confirm_pass').attr("style","border-color: red;");
         $('#error2').html('Mật khẩu xác nhận không trùng khớp!');
         $('#error2').addClass('error');
     }
@@ -235,6 +235,9 @@ $(document).on('click', '#update', function(){
                 $.post('Server/Customer/password.php', { pass_new : pass_new, pass : pass }, function(data){
                     $('#notification').html(data);
                     $('.loadava1').load(' .loadava1');
+                    $('#pass_now').val('');
+                    $('#pass_new').val('');
+                    $('#confirm_pass').val('');
                 });
             }else{
                 alert('Mật khẩu xác nhận không khớp!');

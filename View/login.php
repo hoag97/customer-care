@@ -14,7 +14,7 @@
 
                             <div class="form-group mb-3">
                                 <label for="phone">Số điện thoại</label>
-                                <input class="form-control" type="number" id="phone" required="" placeholder="0339928096" name="user" value="<?php if(isset($user)){ echo $user; } ?>">
+                                <input class="form-control" type="text" id="phone" required="" placeholder="0339928096" name="user" value="<?php if(isset($user)){ echo $user; } ?>">
                             </div>
 
                             <div class="form-group mb-3">

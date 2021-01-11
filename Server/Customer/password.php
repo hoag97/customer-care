@@ -21,7 +21,7 @@
 			$updatePass = $customer->updateCustomerPass($id, $password);
 ?>
 		<div class="jq-toast-wrap top-right">
-			<div class="jq-toast-single jq-has-icon jq-icon-danger">
+			<div class="jq-toast-single jq-has-icon jq-icon-success">
 				<span class="close-jq-toast-single">x</span>
 				<h2 class="jq-toast-heading">Thành công!</h2>
 				Mật khẩu sẽ được áp dụng ở lần đăng nhập tiếp theo

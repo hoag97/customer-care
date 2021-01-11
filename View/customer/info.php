@@ -2,34 +2,34 @@
 	$id = $_SESSION['id_cus'];
 	$nameFolder = $id;
  ?>
-<div class="col-md-9 col-9" style="background-color: #fff; padding-left: 30px;border-radius: 0.25rem; margin: 50px 0 0px 0;float: left;height: 100%">
+<div class="col-md-9 col-12" style="background-color: #fff; padding-left: 15px;border-radius: 0.25rem; margin: 50px 0 0px 0;float: left;height: 100%">
 	<div class="title-info" style="border-bottom: 1px solid #efefef; width: 100%; height:80px;">
 		<div style="margin-top: 20px;">
 		<h4 style="color: #333">Thông Tin Khách Hàng</h4>
 		<p>Quản lý thông tin khách hàng để bảo mật tài khoản</p>
 		</div>
 	</div>
-	<div class="info_cus" style="height: 300px;">
-		<div class="info_all" style="height: 100%; display: flex;">
-			<div class="info_left" style="height: 100%">
+	<div class="info_cus col-md-12 col-12">
+		<div class="info_all col-md-12 col-12">
+			<div class="col-md-7 col-12" style="float: left;height: 100%;">
 				<div class="info_cus1">
-					<div class="label_cus">Tên Khách Hàng</div>
-					<div class="value_cus"><?php echo $customer['name']; ?></div>
+					<div class="label_cus col-md-4 col-6">Tên Khách Hàng</div>
+					<div class="value_cus col-md-8 col-6"><?php echo $customer['name']; ?></div>
 				</div>
 
 				<div class="info_cus1">
-					<div class="label_cus">Số Điện Thoại</div>
-					<div class="value_cus"><?php echo $customer['phone']; ?></div>
+					<div class="label_cus col-md-4 col-6">Số Điện Thoại</div>
+					<div class="value_cus col-md-8 col-6"><?php echo $customer['phone']; ?></div>
 				</div>
 
 				<div class="info_cus1">
-					<div class="label_cus">Email</div>
-					<div class="value_cus"><?php echo $customer['email']; ?></div>
+					<div class="label_cus col-md-4 col-6">Email</div>
+					<div class="value_cus col-md-8 col-6"><?php echo $customer['email']; ?></div>
 				</div>
 
 				<div class="info_cus1">
-					<div class="label_cus">Giới tính</div>
-					<div class="value_cus"><?php echo $customer['sex']; ?></div>
+					<div class="label_cus col-md-4 col-6">Giới tính</div>
+					<div class="value_cus col-md-8 col-6"><?php echo $customer['sex']; ?></div>
 				</div>
 
 				<div class="info_cus1">
@@ -37,11 +37,11 @@
 						$births = $customer['birth'];
 						$birth = date('d/m/Y', strtotime($births));
 					 ?>
-					<div class="label_cus">Ngày sinh</div>
-					<div class="value_cus"><?php echo $birth ?></div>
+					<div class="label_cus col-md-4 col-6">Ngày sinh</div>
+					<div class="value_cus col-md-8 col-6"><?php echo $birth ?></div>
 				</div>
 			</div>
-			<div class="info_right" style="height: 70%; width: 30%; float: left; border-left: 1px solid #efefef">
+			<div class="info_right col-md-5 col-12" style=" float: left; border-left: 1px solid #efefef">
 				<div style="text-align: center; margin-bottom: 20px;" id="avatar_cus">
 					<?php 
 						if ($customer['avatar'] == 'guest.jpg') {
@@ -62,14 +62,14 @@
 					    <input id="ava-img" type="file" name="image" accept=".jpg,.jpeg,.png"/>
 					    Chọn Ảnh
 					</label>
-					<p style="color: #999; font-size: 14px; text-align: left; padding-left: 40px;">Kích thước file tối đa là 1mb<br>Định dạng: .JPEG, .PNG, .JPG</p>
+					<p style="color: #999; font-size: 14px; text-align: center;">Kích thước file tối đa là 1mb<br>Định dạng: .JPEG, .PNG, .JPG</p>
 					<p></p>
      			</form>
        			<div id="err" style="color: red; text-align: center;"></div>	
 			</div>
 		</div>
 	</div>
-	<div class="save1" style="height: 50px; padding-left: 80px;margin-bottom: 20px;">
+	<div class="save1 save2 col-md-12">
 		<button type="button" style="height: 40px;padding: 0 20px;min-width: 70px;max-width: 220px;color: #fff;background: #a8741a;" class="btn waves-effect waves-light save" id="toastr-three">Lưu</button>
 	</div>
 	<div id="content"></div>

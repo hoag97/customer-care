@@ -39,7 +39,7 @@
 		<div class="rate text-center col-md-6 col-12" style="float: left;">
 
 			<?php 
-				if (count($checkfb) == 1) {
+				if (count($checkfb) == 0) {
 			?>
 				<form action="" method="POST" class="col-12">
 					<div id="half" style="margin-bottom: 10px;"></div>

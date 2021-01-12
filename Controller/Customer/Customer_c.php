@@ -46,8 +46,6 @@
                     $add = $this->customer->addFeedback($ido, $user_id, $customer_id, $rate, $feedback);
 
                     header("refresh: 0;");
-                }else{
-                    echo "<script>alert('Quý khách chỉ có thể đánh giá 1 lần ở mỗi đơn hàng!')</script>";
                 }
             }
             include_once 'View/profile.php';
